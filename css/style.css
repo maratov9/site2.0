@@ -1,0 +1,497 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*Обнуляющий список*/
+body {
+  font-family: "Libre Franklin";
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__link {
+  margin: 0 0 0 40px;
+  color: #000000;
+}
+
+.illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 55px 0 0 0;
+}
+
+.illustration__body {
+  margin: 0 0 0 50px;
+}
+
+.illustration__title {
+  margin: 0 0 15px 0;
+}
+
+.illustration__subtitle {
+  margin: 0 0 27px 0;
+  font-size: 36px;
+}
+
+.illustration__text {
+  margin: 0 0 28px 0;
+}
+
+.title {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.subtitle {
+  font-family: "Tenor Sans";
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.text {
+  font-family: "Source Serif Pro";
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.by p {
+  margin: 0 5px 0 0;
+}
+
+.column {
+  padding: 50px 0 130px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.column::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #e6e6e6;
+  bottom: 90px;
+}
+
+.column__item {
+  max-width: 390px;
+}
+
+.column__title {
+  margin: 20px 0 15px 0;
+}
+
+.column__subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+  max-width: 350px;
+}
+
+.column__by {
+  margin: 0 0 50px 0;
+}
+
+.post {
+  padding: 0 0 181px 0;
+  position: relative;
+}
+
+.post::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #e6e6e6;
+  bottom: 70px;
+}
+
+.post__title-subtitle {
+  margin: 0 0 30px 0;
+}
+
+.post__title {
+  margin: 25px 0 18px 0;
+}
+
+.post__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post__item {
+  max-width: 280px;
+}
+
+.post__subtitle {
+  max-width: 280px;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+}
+
+.post__by {
+  margin: 0 0 45px 10px;
+}
+
+.post__btn {
+  margin: 80px 0 0 0;
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.post__button {
+  padding: 19px 26px 19px 26px;
+  color: #000000;
+  border: 1px solid #000;
+}
+
+.post__button:hover {
+  background-color: #000;
+  color: #e6e6e6;
+  -webkit-transition: color 1.2s;
+  transition: color 1.2s;
+}
+
+.featured-post {
+  padding: 0 0 90px 0;
+}
+
+.featured-post__title {
+  margin: 25px 0 18px 0;
+}
+
+.featured-post__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured-post__item {
+  max-width: 590px;
+}
+
+.featured-post__subtitle {
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+}
+
+.featured-post__by {
+  margin: 0 0 40px 0;
+}
+
+.footer {
+  background-color: #141414;
+}
+
+.footer__head {
+  padding: 93px 0 125px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.footer__head::after {
+  content: "";
+  position: absolute;
+  top: 180px;
+  height: 1px;
+  width: 100%;
+  background-color: #4d4d4d;
+}
+
+.footer__logo {
+  margin: 0 15px 0 0;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.categories {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 153px 0;
+}
+
+.categories__title {
+  margin: 0 0 20px 0;
+}
+
+.categories__list1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.categories__list {
+  margin: 0 120px 0 0;
+}
+
+.categories__list li {
+  margin: 0 0 15px 0;
+}
+
+.categories__list li:last-child {
+  margin: 0;
+}
+
+.title-footer {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.categories-search__title {
+  margin: 0 0 20px 0;
+}
+
+.categories-search__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.categories-search__send {
+  background-color: #000000;
+  width: 79px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.categories-search__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn {
+  width: 221px;
+  height: 45px;
+}
+
+.btn::-webkit-input-placeholder {
+  padding: 0 0 0 20px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.btn:-ms-input-placeholder {
+  padding: 0 0 0 20px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.btn::-ms-input-placeholder {
+  padding: 0 0 0 20px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.btn::placeholder {
+  padding: 0 0 0 20px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+}
